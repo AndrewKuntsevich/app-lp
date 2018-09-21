@@ -66,3 +66,28 @@ body {
 .row .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
   background-color: aqua; }
+
+.features-1 {
+  width: 100%;
+  background-color: yellowgreen; }
+
+.phone-img {
+  height: 50rem;
+  display: block;
+  margin: 0 auto; }
+
+.features-box {
+  margin-top: 2rem;
+  background-color: tomato; }
+
+.features-box__text {
+  width: 49%;
+  padding: 2rem;
+  margin-bottom: 30px;
+  background-color: wheat;
+  float: left;
+  margin-right: 1rem; }
+
+.icon {
+  height: 3rem;
+  width: 3rem; }

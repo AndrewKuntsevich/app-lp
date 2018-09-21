@@ -1,0 +1,32 @@
+
+
+.features-1{
+    width: 100%;
+}
+
+.features-img{
+    height: 50rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.features-wrapper{
+    
+    margin-top: 2rem;
+    background-color: tomato;
+}
+
+.feature-box {
+    width: 48%;
+    padding: 2rem;
+    margin-bottom: 30px;
+    background-color: wheat;
+    float: left;
+    margin-right: 1rem;
+
+    &__text{
+        margin-top: -4rem;
+        margin-left: 5rem;
+    }
+}  
+

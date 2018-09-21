@@ -30,3 +30,13 @@
     }
 }  
 
+.feature2-box__text { 
+    padding: 4rem;
+
+    background-color: bisque;
+
+    &:not(:last-child){
+        margin: 5rem 0; 
+    }
+}
+

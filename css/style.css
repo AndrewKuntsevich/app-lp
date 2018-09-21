@@ -134,6 +134,12 @@ input, textarea {
     margin-top: -4rem;
     margin-left: 5rem; }
 
+.feature2-box__text {
+  padding: 4rem;
+  background-color: bisque; }
+  .feature2-box__text:not(:last-child) {
+    margin: 5rem 0; }
+
 .reviews {
   background-color: #fedc3d; }
 

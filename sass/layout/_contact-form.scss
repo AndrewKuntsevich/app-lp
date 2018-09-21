@@ -1,1 +1,12 @@
 // cont forms
+.contact-form {
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-white, 0.6), 
+        rgba($color-white, 0.6)), 
+        url('../img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}

@@ -1,5 +1,6 @@
 .card {
     margin: 0 auto;
+    height: 46rem;
     padding: 3rem;
     max-width: 35rem;
     max-height: 50rem;
@@ -8,50 +9,39 @@
     border-radius: 5px;
 
     &__top {
-        margin: 20px auto;
+        width: 8rem;
+        margin: 0 auto;
 	    position: relative;
-	    display: inline-block;
+    }
+
+    &__body {
+        text-align: center;
+    }
+
+    &__list {
+        margin: 2rem 0;
+        font-size: 1.6rem;
     }
 
     &__currency {
         position: absolute;
-        top: 4px;
+        top: rem;
         right: 100%;
         margin-right: 4px;
+        font-size: 2rem;
     }
 
     &__price {
-        font-size: 3rem;
+        font-size: 5rem;
         font-weight: bold;
     }
 
     &__month {
         position: absolute;
-        bottom: 4px;
+        bottom: 1rem;
         left: 100%;
         margin-left: 4px;
+        font-size: 2rem;
     }
-}
-
-.priceWrap {
-	margin: 20px auto;
-	position: relative;
-	display: inline-block;
-}
-.priceWrapNumber {
-	font-size: 40px;
-	font-weight: bolder;
-}
-.priceWrapCur {
-	position: absolute;
-    top: 4px;
-    right: 100%;
-    margin-right: 4px;
-}
-
-.priceWrapM {
-    position: absolute;
-    bottom: 4px;
-    left: 100%;
-    margin-left: 4px;
+    
 }

@@ -37,6 +37,53 @@ body {
     background-clip: text;
     color: transparent; }
 
+.card {
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 35rem;
+  max-height: 50rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+  .card__top {
+    margin: 20px auto;
+    position: relative;
+    display: inline-block; }
+  .card__currency {
+    position: absolute;
+    top: 4px;
+    right: 100%;
+    margin-right: 4px; }
+  .card__price {
+    font-size: 3rem;
+    font-weight: bold; }
+  .card__month {
+    position: absolute;
+    bottom: 4px;
+    left: 100%;
+    margin-left: 4px; }
+
+.priceWrap {
+  margin: 20px auto;
+  position: relative;
+  display: inline-block; }
+
+.priceWrapNumber {
+  font-size: 40px;
+  font-weight: bolder; }
+
+.priceWrapCur {
+  position: absolute;
+  top: 4px;
+  right: 100%;
+  margin-right: 4px; }
+
+.priceWrapM {
+  position: absolute;
+  bottom: 4px;
+  left: 100%;
+  margin-left: 4px; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;

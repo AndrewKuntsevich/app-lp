@@ -1,0 +1,57 @@
+.card {
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 35rem;
+    max-height: 50rem;
+    background-color: #fff;
+    box-shadow: $shadow-far;
+    border-radius: 5px;
+
+    &__top {
+        margin: 20px auto;
+	    position: relative;
+	    display: inline-block;
+    }
+
+    &__currency {
+        position: absolute;
+        top: 4px;
+        right: 100%;
+        margin-right: 4px;
+    }
+
+    &__price {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    &__month {
+        position: absolute;
+        bottom: 4px;
+        left: 100%;
+        margin-left: 4px;
+    }
+}
+
+.priceWrap {
+	margin: 20px auto;
+	position: relative;
+	display: inline-block;
+}
+.priceWrapNumber {
+	font-size: 40px;
+	font-weight: bolder;
+}
+.priceWrapCur {
+	position: absolute;
+    top: 4px;
+    right: 100%;
+    margin-right: 4px;
+}
+
+.priceWrapM {
+    position: absolute;
+    bottom: 4px;
+    left: 100%;
+    margin-left: 4px;
+}

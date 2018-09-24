@@ -71,6 +71,17 @@ body {
   height: 3rem;
   width: 3rem; }
 
+form {
+  margin-bottom: 3rem; }
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  resize: vertical;
+  background-color: rgba(255, 255, 255, 0.781); }
+
 .section {
   padding: 7rem 0;
   background-color: #eee; }
@@ -89,16 +100,13 @@ body {
     margin-right: 6rem; }
 
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
-  background-color: orange; }
+  width: calc((100% - 6rem) / 2); }
 
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
-  background-color: pink; }
+  width: calc((100% - 2 * 6rem) / 3); }
 
 .row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
-  background-color: aqua; }
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
 
 .features-1 {
   width: 100%; }
@@ -131,3 +139,12 @@ body {
 
 .reviews {
   background-color: #fedc3d; }
+
+.contact-form {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/bg1.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.footer {
+  background-color: #222; }

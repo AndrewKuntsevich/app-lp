@@ -4,6 +4,8 @@
 }
 
 .row{
+    @include clearfix;
+    margin-bottom: $gutter-horisontal;
    
     [class^="col-"]{
         float: left;
@@ -14,6 +16,7 @@
     }
     .col-1-of-2{
         width: calc((100% - #{$gutter-vertical}) / 2);
+        
     }
 
 

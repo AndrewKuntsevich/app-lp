@@ -11,6 +11,7 @@
         transition: all .2s;
         position: relative;
         font-size: $default-font-size;
+        
 
         border: none;
         cursor: pointer;
@@ -38,6 +39,7 @@
     &--colored {
         background-color: $color-primary-dark;
         color: $color-white;
+        
 
     }
 

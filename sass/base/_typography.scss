@@ -5,6 +5,12 @@ body{
     color: $color-grey-dark-1;
 }
 
+.logo{
+    font-size: 4rem;
+    font-weight: 900;
+    color: $color-white;
+}
+
 .heading {
     text-align: center;
     font-size: 2rem;
@@ -25,9 +31,29 @@ body{
     }
 
     &--color{
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
     }
+
+    &--slogan{
+        font-size: 13rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1;
+       
+    }
 }
+
+.header__text{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark-2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    letter-spacing: .3rem;
+}
+

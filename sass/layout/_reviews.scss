@@ -5,28 +5,38 @@
 }
 
 .reviews-box{
-    padding: 2rem 4rem;
+   
     width: 60%;
     margin: 0 auto;
-    background-color: blue;
+    //background-color: blue;
     
 
     @include clearfix;
 }
 
-.review__photo{
+.review__photo-shape{
     width: 15rem;
     height: 15rem;
-    border-radius: 50%;
-    float: left;
+    float: left; 
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: $shadow-far;
+    margin-right: 3rem;
+    
+}
 
+.review__photo{
+   transform: translateX(-3.5rem);
+   height: 100%;  
    
 }
 
 .review__text{
-    float: right;    
+    float: left;    
     width: 70%;
-    display: inline-block;
     padding: 2rem;
-    background-color: antiquewhite;
+    //background-color: antiquewhite;
+    font-size: 1.7rem;
+    color: $color-grey-dark-2;
+    text-align: center;
+    
 }

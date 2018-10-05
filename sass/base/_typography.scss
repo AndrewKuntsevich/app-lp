@@ -12,13 +12,13 @@ body{
 }
 
 .heading {
-    text-align: center;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    
 
     &--secondary {
+        text-align: center;
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 3rem;
@@ -57,3 +57,16 @@ body{
     letter-spacing: .3rem;
 }
 
+.feature-text{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $color-grey-dark-2;
+    font-size: 1.5rem;   
+}
+
+.video__text{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $color-grey-dark-3;
+    font-size: 2rem;  
+}

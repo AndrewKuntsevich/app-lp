@@ -23,12 +23,11 @@ body {
   color: #fff; }
 
 .heading {
-  text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 2rem; }
+  text-transform: uppercase; }
   .heading--secondary {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem; }
@@ -56,6 +55,18 @@ body {
   text-transform: uppercase;
   padding: 2rem 0;
   letter-spacing: .3rem; }
+
+.feature-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #777;
+  font-size: 1.5rem; }
+
+.video__text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #333;
+  font-size: 2rem; }
 
 .card {
   margin: 0 auto;
@@ -124,6 +135,12 @@ body {
 .icon {
   height: 3rem;
   width: 3rem; }
+
+.icon-quotes-left {
+  margin-right: .5rem; }
+
+.icon-quotes-right {
+  margin-left: .5rem; }
 
 form {
   margin-bottom: 3rem; }
@@ -239,28 +256,29 @@ input, textarea {
   width: 100%; }
 
 .features-img {
-  height: 50rem;
+  height: 60rem;
   display: block;
-  margin: 0 auto; }
+  margin: 5rem auto; }
 
 .features-wrapper {
-  margin-top: 2rem;
-  background-color: tomato; }
+  margin-top: 2rem; }
 
 .feature-box {
   width: 48%;
   padding: 2rem;
   margin-bottom: 30px;
-  background-color: wheat;
   float: left;
   margin-right: 1rem; }
   .feature-box__text {
     margin-top: -4rem;
     margin-left: 5rem; }
 
+.features-2 {
+  position: relative; }
+
 .feature2-box__text {
   padding: 4rem;
-  background-color: bisque; }
+  text-align: center; }
   .feature2-box__text:not(:last-child) {
     margin: 5rem 0; }
 
@@ -270,27 +288,32 @@ input, textarea {
   padding: 10rem; }
 
 .reviews-box {
-  padding: 2rem 4rem;
   width: 60%;
-  margin: 0 auto;
-  background-color: blue; }
+  margin: 0 auto; }
   .reviews-box:after {
     content: "";
     display: table;
     clear: both; }
 
-.review__photo {
+.review__photo-shape {
   width: 15rem;
   height: 15rem;
-  border-radius: 50%;
-  float: left; }
+  float: left;
+  clip-path: circle(50% at 50% 50%);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  margin-right: 3rem; }
+
+.review__photo {
+  transform: translateX(-3.5rem);
+  height: 100%; }
 
 .review__text {
-  float: right;
+  float: left;
   width: 70%;
-  display: inline-block;
   padding: 2rem;
-  background-color: antiquewhite; }
+  font-size: 1.7rem;
+  color: #777;
+  text-align: center; }
 
 .video {
   width: 100%;
@@ -319,8 +342,7 @@ input, textarea {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 50%);
-  padding: 3rem 1.5rem;
-  background-color: palevioletred; }
+  padding: 3rem 1.5rem; }
   .video__text-box p {
     margin-bottom: 5rem; }
 

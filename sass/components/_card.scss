@@ -21,13 +21,15 @@
     &__list {
         margin: 2rem 0;
         font-size: 1.6rem;
+        list-style-type: none;
+
     }
 
     &__currency {
         position: absolute;
-        top: rem;
+        top: 1rem;
         right: 100%;
-        margin-right: 4px;
+        //margin-right: 4px;
         font-size: 2rem;
     }
 

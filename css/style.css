@@ -54,12 +54,12 @@ body {
     text-align: center; }
   .card__list {
     margin: 2rem 0;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    list-style-type: none; }
   .card__currency {
     position: absolute;
-    top: rem;
+    top: 1rem;
     right: 100%;
-    margin-right: 4px;
     font-size: 2rem; }
   .card__price {
     font-size: 5rem;

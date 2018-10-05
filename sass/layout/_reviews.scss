@@ -1,3 +1,32 @@
 .reviews{
     background-color: $color-primary;
+    width: 100%;
+    padding: 10rem;
+}
+
+.reviews-box{
+    padding: 2rem 4rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: blue;
+    
+
+    @include clearfix;
+}
+
+.review__photo{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    float: left;
+
+   
+}
+
+.review__text{
+    float: right;    
+    width: 70%;
+    display: inline-block;
+    padding: 2rem;
+    background-color: antiquewhite;
 }

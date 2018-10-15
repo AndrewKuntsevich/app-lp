@@ -5,9 +5,9 @@
 }
 
 .features-img{
-    height: 60rem;
+    max-height: 50rem;
     display: block;
-    margin: 5rem auto;
+    margin: 0 auto;
     
 }
 
@@ -34,12 +34,12 @@
     position: relative;
 }
 .feature2-box__text { 
-    padding: 4rem;
+    padding: 0 4rem 4rem 4rem;
     text-align: center;
     //background-color: bisque;
 
-    &:not(:last-child){
-        margin: 5rem 0; 
+    &:not(:first-child){
+        margin: 5rem 0 0 0; 
     }
 }
 

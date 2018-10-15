@@ -1,12 +1,52 @@
-form {
-    margin-bottom: 3rem;
+.form {
+    //margin-bottom: 3rem;
+
+    &__tittle {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $color-grey-dark-2;
+
+    }
+
+    &__ul {
+        text-align: center;
+    }
+
+    &__li {
+        display: inline;
+        list-style-type: none;
+    }
+
 }
 
-input, textarea {
+
+input,
+textarea {
     width: 100%;
     padding: 12px;
+    border: none;
     border-radius: 5px;
-    margin-bottom: 6px;
-    resize: vertical;
-    background-color: rgba(255, 255, 255, 0.781)
+    margin-bottom: 1rem;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.781);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $color-grey-dark-2;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px $color-primary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color-grey-dark-1;
+    }
+
+    &:-moz-placeholder {
+        color: $color-grey-dark-1;
+    }
+}
+
+textarea {
+    height: 10rem;
 }

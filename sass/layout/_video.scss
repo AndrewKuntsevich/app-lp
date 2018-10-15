@@ -22,15 +22,10 @@
 }
 
 .video__text-box{
-
+    @include absCent;
     text-align: center;
     display: inline-block;
-    position: absolute;
-    left:50%;
-    transform: translate(-50%,50%);
-    padding: 3rem 1.5rem;
-    //background-color: palevioletred;
-
+    
     & p{
         margin-bottom: 5rem;
     }

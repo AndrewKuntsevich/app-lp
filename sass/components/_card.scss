@@ -1,12 +1,17 @@
 .card {
-    margin: 0 auto;
-    height: 46rem;
+    margin: 0 2rem;
     padding: 3rem;
-    max-width: 35rem;
-    max-height: 50rem;
+    //max-width: 35rem;
+    //max-height: 50rem;
     background-color: #fff;
     box-shadow: $shadow-far;
-    border-radius: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+
+    }
 
     &__top {
         width: 8rem;
@@ -47,6 +52,3 @@
     }
     
 }
-
-
-

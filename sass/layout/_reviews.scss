@@ -1,17 +1,18 @@
 .reviews{
     background-color: $color-primary;
+    height: 30rem;
     width: 100%;
-    padding: 10rem 0;
+    position: relative;
+
+   // @include clearfix;
 }
 
 .reviews-box{
    
     width: 60%;
-    margin: 0 auto;
-    //background-color: blue;
-    
-
-    @include clearfix;
+    padding: 5rem 0;
+    @include absCent;
+   
 }
 
 .review__photo-shape{
@@ -20,8 +21,7 @@
     float: left; 
     clip-path: circle(50% at 50% 50%);
     box-shadow: $shadow-far;
-    margin-right: 3rem;
-    
+    margin-right: 3rem;   
 }
 
 .review__photo{

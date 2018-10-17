@@ -11,43 +11,6 @@
     position: relative;
 }
 
-
-.logo-box{  
-    display: inline-block;
-    float: left;
-}
-
-.nav-panel{   
-    @include clearfix;
-}
-
-.nav-list{
-    padding: 2rem 1rem;
-    list-style: none;
-    float: right;
-   
-    
-   
-
-    & li{
-        display: inline;
-        margin-left: 4rem;
-    }
-
-    & a{
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: $color-white;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    & a:hover{
-        color: $color-primary;
-    }
-}
-
-
 .header__text-box{
     height: 75vh;  
     @include clearfix;

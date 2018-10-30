@@ -12,7 +12,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #999; }
@@ -34,7 +34,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 3rem; }
+    margin-bottom: 4rem; }
   .heading--primary {
     font-size: 3rem;
     font-weight: 900;
@@ -48,8 +48,10 @@ body {
     .heading--color:hover {
       cursor: default;
       letter-spacing: .15rem; }
+  .heading--white {
+    color: #fff; }
   .heading--slogan {
-    font-size: 13rem;
+    font-size: 9rem;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1; }
@@ -154,8 +156,22 @@ body {
     transition: all .2s; }
 
 .icon {
-  height: 3rem;
-  width: 3rem; }
+  height: 4rem;
+  width: 4rem;
+  fill: #ff4e50; }
+  .icon--btn {
+    width: 1.55rem;
+    height: 1.55rem;
+    fill: #fff;
+    margin-right: 5px; }
+  .icon--card {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 1rem; }
+  .icon--social {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem; }
 
 .icon-quotes-left {
   margin-right: .5rem; }
@@ -163,17 +179,18 @@ body {
 .icon-quotes-right {
   margin-left: .5rem; }
 
-.form__tittle {
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #777; }
-
-.form__ul {
-  text-align: center; }
-
-.form__li {
-  display: inline;
-  list-style-type: none; }
+.form {
+  margin-top: 1rem; }
+  .form__tittle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #777; }
+  .form__ul {
+    text-align: center; }
+  .form__li {
+    display: inline;
+    list-style-type: none; }
 
 input,
 textarea {
@@ -183,14 +200,14 @@ textarea {
   border-radius: 5px;
   margin-bottom: 1rem;
   resize: none;
-  background-color: rgba(255, 255, 255, 0.781);
+  background-color: rgba(255, 255, 255, 0.4);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #777; }
   input:focus,
   textarea:focus {
     outline: none;
-    box-shadow: 0 0 5px #ff4e50; }
+    box-shadow: 0 0 5px #fffc4d; }
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
     color: #999; }
@@ -232,7 +249,7 @@ textarea {
 
 .navigation {
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   height: 60px;
   width: 100%;
   top: 0;
@@ -258,16 +275,16 @@ textarea {
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     text-transform: uppercase; }
     .navigation__link:hover {
       color: #f9d423; }
 
 .header {
   width: 100%;
-  height: 90vh;
-  padding-top: 60px;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../img/bg1.jpg");
+  height: 99vh;
+  padding-top: 100px;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../img/bg1.jpg");
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -341,37 +358,31 @@ textarea {
 
 .reviews {
   background-color: #f9d423;
-  height: 30rem;
-  width: 100%;
+  padding: 3rem auto;
+  height: 35rem;
   position: relative; }
-
-.reviews-box {
-  width: 60%;
-  padding: 5rem 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.review__photo-shape {
-  width: 15rem;
-  height: 15rem;
-  float: left;
-  clip-path: circle(50% at 50% 50%);
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  margin-right: 3rem; }
-
-.review__photo {
-  transform: translateX(-3.5rem);
-  height: 100%; }
+  .reviews__wrapper {
+    width: 50rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .review__text {
-  float: left;
-  width: 70%;
-  padding: 2rem;
   font-size: 1.7rem;
-  color: #777;
+  color: #fff;
   text-align: center; }
+
+.review__name {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.review__company {
+  font-weight: 700; }
+
+.review__content {
+  margin-top: 1.4rem;
+  color: #fafafa; }
 
 .video {
   width: 100%;
@@ -426,5 +437,5 @@ textarea {
     .footer__link:hover {
       color: #fffc4d; }
   .footer__logo {
-    margin: 0 auto;
-    text-align: center; }
+    margin-right: 6rem;
+    text-align: right; }

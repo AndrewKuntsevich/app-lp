@@ -1,42 +1,37 @@
-.reviews{
+.reviews {
     background-color: $color-primary;
-    height: 30rem;
-    width: 100%;
+    padding: 3rem auto;
+    height: 35rem;
     position: relative;
 
-   // @include clearfix;
+    &__wrapper {
+        width: 50rem;
+        @include absCent;
+    }
 }
 
-.reviews-box{
-   
-    width: 60%;
-    padding: 5rem 0;
-    @include absCent;
-   
-}
+.review {
 
-.review__photo-shape{
-    width: 15rem;
-    height: 15rem;
-    float: left; 
-    clip-path: circle(50% at 50% 50%);
-    box-shadow: $shadow-far;
-    margin-right: 3rem;   
-}
-
-.review__photo{
-   transform: translateX(-3.5rem);
-   height: 100%;  
-   
-}
-
-.review__text{
-    float: left;    
-    width: 70%;
-    padding: 2rem;
-    //background-color: antiquewhite;
-    font-size: 1.7rem;
-    color: $color-grey-dark-2;
-    text-align: center;
     
+    &__text {
+        font-size: 1.7rem;
+        color: $color-white;
+        text-align: center;
+    
+    }
+
+    &__name {
+        
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    &__company {
+        font-weight: 700;
+    }
+
+    &__content {
+        margin-top: 1.4rem;
+        color: $color-grey-light-1;
+    }
 }

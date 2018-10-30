@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <title>app-lp</title>
 </head>
 
@@ -50,12 +50,18 @@
                                 apples. Every cat can bark like a godzilla in the pocket without any distraction from
                                 lemons again.</p>
 
-                            <div class="btn btn--colored"><svg class="icon icon-appleinc">
+                            <div class="btn btn--colored">
+                                <svg class="icon icon-appleinc icon--btn">
                                     <use xlink:href="img/sprite.svg#icon-appleinc"></use>
-                                </svg> Appstore</div>
-                            <div class="btn btn--colored"><svg class="icon icon-android">
+                                </svg> 
+                                Appstore
+                            </div>
+                            <div class="btn btn--colored">
+                                <svg class="icon icon-android icon--btn">
                                     <use xlink:href="img/sprite.svg#icon-android"></use>
-                                </svg> Playmarket</div>
+                                </svg>
+                                Playmarket
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,12 +89,18 @@
                     </div>
 
                     <div class="col-2-of-3">
-                        <h1 class="heading heading--secondary">Heading</h1>
+                        <h1 class="heading heading--secondary heading--color">Heading</h1>
                         <div class="features-wrapper">
 
                             <div class="feature-box">
                                 <svg class="icon icon-location2">
-                                    <use xlink:href="img/sprite.svg#icon-location2"></use>
+                                        <defs>
+                                                <linearGradient id="gradient">
+                                                    <stop offset="0%" style="stop-color: deepPink"></stop>
+                                                    <stop offset="100%" style="stop-color: #009966"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                    <use xlink:href="img/sprite.svg#icon-location2" xlink:href="#gradient"></use>
                                 </svg>
                                 <div class="feature-box__text">
                                     <h2 class="heading">We are the best</h2>
@@ -144,23 +156,16 @@
 
         <section class="section reviews">
 
-            <div class="reviews-box">
-                <figure class="review__photo-shape">
-                    <img src="img/ph-1.jpg" alt="photo" class="review__photo">
-                </figure>
-
-                <div class="review__text">
-                    <p>&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis temporibus
-                        laudantium nesciunt sapiente dolor minus aut at incidunt culpa. Sed, dignissimos? Quidem
-                        repellat alias ratione error praesentium voluptate nihil.&quot;</p>
+            <div class="reviews__wrapper">
+                    <div class="review__text">
+                    <p class="review__name">John Doe</p class="review__name">
+                    <p class="review__position">TeamLead at <span class="review__company">Company</span></p class="review__position">
+                    <p class="review__content">&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officiis temporibus
+                        laudantium nesciunt sapiente dolor minus aut at incidunt culpa.&quot;</p>
                 </div>
             </div>
 
         </section>
-
-
-
-        <!--<div class="review__text">  -->
 
         <section class="section features-2">
             <div class="container">
@@ -249,16 +254,16 @@
                             </div>
                             <div class="card__body">
                                 <ul class="card__list">
-                                    <li><svg class="icon icon-database">
+                                    <li><svg class="icon icon-database icon--card">
                                             <use xlink:href="img/sprite.svg#icon-database"></use>
                                         </svg>1GB Local Storage</li>
-                                    <li><svg class="icon  icon-download2">
+                                    <li><svg class="icon icon-download2 icon--card">
                                             <use xlink:href="img/sprite.svg#icon-download2"></use>
                                         </svg>2 installations</li>
-                                    <li><svg class="icon icon-users">
+                                    <li><svg class="icon icon-users icon--card">
                                             <use xlink:href="img/sprite.svg#icon-users"></use>
                                         </svg>1 User</li>
-                                    <li><svg class="icon icon-phone">
+                                    <li><svg class="icon icon-phone icon--card">
                                             <use xlink:href="img/sprite.svg#icon-phone"></use>
                                         </svg>Full support</li>
                                 </ul>
@@ -277,19 +282,19 @@
                             </div>
                             <div class="card__body">
                                 <ul class="card__list">
-                                    <li><svg class="icon icon-infinite">
+                                    <li><svg class="icon icon-infinite icon--card">
                                             <use xlink:href="img/sprite.svg#icon-infinite"></use>
                                         </svg>Unlimited data transfer</li>
-                                    <li><svg class="icon icon-database">
+                                    <li><svg class="icon icon-database icon--card">
                                             <use xlink:href="img/sprite.svg#icon-database"></use>
                                         </svg>10GB Local Storage</li>
-                                    <li><svg class="icon icon-download2">
+                                    <li><svg class="icon icon-download2 icon--card">
                                             <use xlink:href="img/sprite.svg#icon-download2"></use>
                                         </svg>20 installations</li>
-                                    <li><svg class="icon icon-users">
+                                    <li><svg class="icon icon-users icon--card">
                                             <use xlink:href="img/sprite.svg#icon-users"></use>
                                         </svg>10 Users</li>
-                                    <li><svg class="icon icon-phone">
+                                    <li><svg class="icon icon-phone icon--card">
                                             <use xlink:href="img/sprite.svg#icon-phone"></use>
                                         </svg>Full support</li>
                                 </ul>
@@ -309,24 +314,24 @@
                             <div class="card__body">
                                 <ul class="card__list">
                                     <li>
-                                        <svg class="icon icon-infinite">
+                                        <svg class="icon icon-infinite icon--card">
                                             <use xlink:href="img/sprite.svg#icon-infinite"></use>
                                         </svg>
                                         Unlimited data transfer
                                     </li>
-                                    <li><svg class="icon icon-database">
+                                    <li><svg class="icon icon-database icon--card">
                                             <use xlink:href="img/sprite.svg#icon-database"></use>
                                         </svg>30GB Local Storage</li>
-                                    <li><svg class="icon icon-download2">
+                                    <li><svg class="icon icon-download2 icon--card">
                                             <use xlink:href="img/sprite.svg#icon-download2"></use>
                                         </svg>Unlimited installations</li>
-                                    <li><svg class="icon icon-users">
+                                    <li><svg class="icon icon-users icon--card">
                                             <use xlink:href="img/sprite.svg#icon-users"></use>
                                         </svg>Unlimited Users</li>
-                                    <li><svg class="icon icon-star-full">
+                                    <li><svg class="icon icon-star-full icon--card">
                                             <use xlink:href="img/sprite.svg#icon-star-full"></use>
                                         </svg>High Perfomance Servers</li>
-                                    <li><svg class="icon icon-phone">
+                                    <li><svg class="icon icon-phone icon--card">
                                             <use xlink:href="img/sprite.svg#icon-phone"></use>
                                         </svg>Full support</li>
                                 </ul>
@@ -352,20 +357,20 @@
                         <h2 class="heading heading--secondary heading--color">Get social</h2>
 
                         <ul class="form__ul">
-                            <li class="form__li">linkedIn
-                                <svg class="icon icon-linkedin">
+                            <li class="form__li">
+                                <svg class="icon icon-linkedin icon--social">
                                     <use xlink:href="img/sprite.svg#icon-linkedin"></use>
                                 </svg>
                             </li>
-                            <li class="form__li">Facebook
-                                <svg class="icon icon-facebook2">
+                            <li class="form__li">
+                                <svg class="icon icon-facebook2 icon--social">
                                     <use xlink:href="img/sprite.svg#icon-facebook2"></use>
                                 </svg>
                             </li>
-                            <li class="form__li">twitter
-                                <svg class="icon icon-twitter">
+                            <li class="form__li">
+                                <svg class="icon icon-twitter icon--social">
                                     <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                                </svg>
+                                </svg> 
                             </li>
                         </ul>
                     </div>

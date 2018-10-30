@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
     line-height: 1.7;
     color: $color-grey-dark-1;
@@ -26,7 +26,7 @@ body{
         text-align: center;
         font-size: 2.5rem;
         font-weight: 700;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 
     &--primary {
@@ -47,8 +47,12 @@ body{
         }
     }
 
+    &--white {
+        color: $color-white;
+    }
+
     &--slogan{
-        font-size: 13rem;
+        font-size: 9rem;
         font-weight: 900;
         text-transform: uppercase;
         line-height: 1;

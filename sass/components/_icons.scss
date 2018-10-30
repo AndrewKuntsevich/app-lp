@@ -1,6 +1,28 @@
 .icon{
-    height: 3rem;
-    width: 3rem; 
+    height: 4rem;
+    width: 4rem;
+    fill: $color-primary-dark;
+
+    &--btn {
+        width: 1.55rem;
+        height: 1.55rem;
+        fill: $color-white;
+        margin-right: 5px;
+    }
+
+    &--card {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    &--social {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 1rem;
+        
+    }
+
 }
 
 .icon-quotes-left{
